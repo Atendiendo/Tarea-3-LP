@@ -117,7 +117,7 @@ abstract public class Pikinim {
      *   int cantidad: cantidad a disminuir.
      ******
      * Returns:
-     *   iNo se retorna nada ya que la función es de tipo void.
+     *   No se retorna nada ya que la función es de tipo void.
      *****/
     public void disminuir(int cantidad){
         this.cantidad -= cantidad;

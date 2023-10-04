@@ -35,6 +35,5 @@ public class Amarillo extends Pikinim{
         cantidad_pikinim += cantidad_aumentada;
         System.out.println("Los pikinim Amarillo han aumentado su cantidad en: " + cantidad_aumentada + "\n");
         SetCantidad(cantidad_pikinim);
-
     }
 }

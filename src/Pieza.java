@@ -76,7 +76,7 @@ public class Pieza extends Zona implements ILevantar{
      *   No es requerido ningún parámetro.
      ******
      * Returns:
-     *   No se retorna nada ya que la función es de tipo void.
+     *   Descripcion de los atributos de la clase.
      *****/
     public String toString() {
         if (GetCompletada()){

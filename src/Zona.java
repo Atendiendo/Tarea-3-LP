@@ -70,7 +70,7 @@ public class Zona {
      *   No es requerido ningún parámetro.
      ******
      * Returns:
-     *   No se retorna nada ya que la función es de tipo void.
+     *   Descripcion de los atributos de la clase.
      *****/
     public String toString() {
         return "No queda nada por hacer en esta zona";

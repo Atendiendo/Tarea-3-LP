@@ -24,6 +24,7 @@ public class Muralla extends Zona{
      ******
      * Si la suma de los ataques de todos los pikinim es superior
      * a la vida de la muralla, esta se destruye.
+     * Si no, solo se le resta a la vida de la muralla.
      ******
      * Input:
      *   Pikinim[] pikinims: arreglo de pikinims.
@@ -80,7 +81,7 @@ public class Muralla extends Zona{
      *   No es requerido ningún parámetro.
      ******
      * Returns:
-     *   No se retorna nada ya que la función es de tipo void.
+     *   Descripcion de los atributos de la clase.
      *****/
     public String toString() {
         if (GetCompletada()){

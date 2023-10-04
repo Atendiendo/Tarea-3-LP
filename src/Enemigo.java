@@ -24,7 +24,7 @@ public class Enemigo extends Zona implements ILevantar{
      * Returns:
      * No retorna nada debido a que es el constructor.
      *****/
-    Enemigo(int vida, int peso, int ataque, boolean desc_inicial, String descripcion){
+     Enemigo(int vida, int peso, int ataque, boolean desc_inicial, String descripcion){
         super();
         this.vida = vida;
         this.peso = peso;
@@ -38,7 +38,7 @@ public class Enemigo extends Zona implements ILevantar{
      ******
      * Si la suma de las capacidades de todos los pikinim es superior
      * al peso del enemigo, lo levantan y se llama a la funcion
-     * multiplicar de un color de pikinim random pasando peso como parametro.
+     * multiplicar de un color de pikinim elegido pasando peso como parametro.
      ******
      * Input:
      *   Pikinim[] pikinims: arreglo de pikinims.
@@ -181,7 +181,7 @@ public class Enemigo extends Zona implements ILevantar{
      *   No es requerido ningún parámetro.
      ******
      * Returns:
-     *   No se retorna nada ya que la función es de tipo void.
+     *   Descripcion de los atributos de la clase.
      *****/
     public String toString() {
         if (GetCompletada()){
