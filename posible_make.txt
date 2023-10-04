@@ -1,0 +1,27 @@
+# Variables
+SRC_FILES = $(wildcard *.java)
+CLASSPATH = .
+
+# Nombre del archivo JAR
+JAR_FILE = MyJavaApp.jar
+
+# Regla para compilar archivos fuente Java
+%.class: %.java
+	javac -cp $(CLASSPATH) $<
+
+# Regla para construir el archivo JAR
+$(JAR_FILE): $(SRC_FILES:.java=.class)
+	jar cfe $(JAR_FILE) Juego $^
+
+# Regla para ejecutar la aplicación
+run: $(JAR_FILE)
+	java -jar $(JAR_FILE)
+
+# Regla por defecto (compilar y construir el archivo JAR)
+all: $(JAR_FILE)
+
+# Limpiar archivos generados
+clean:
+	rm -f *.class $(JAR_FILE)
+
+.PHONY: all run clean
