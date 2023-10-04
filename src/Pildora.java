@@ -3,10 +3,38 @@ import java.util.Scanner;
 public class Pildora extends Zona{
     private final int cantidad;
 
+    /*****
+     * Constructor Pildora
+     ******
+     * Esta función, inicializa las variables de la clase Pildora
+     * Llamando a su vez el constructor de la superclase Zona para inicializar
+     * todas la variables necesarias
+     ******
+     * Input:
+     * int cantidad: variable a asignar.
+     ******
+     * Returns:
+     * No retorna nada debido a que es el constructor.
+     *****/
     Pildora(int cantidad){
         super();
         this.cantidad = cantidad;
     }
+
+    /*****
+     * void Interactuar
+     ******
+     * Si la zona ya esta completada, se llama a interactuar de la superclase
+     * en caso contrario, se le pide al usuario que color de
+     * pikinim desea aumentar y posteriormente se llama a multiplicar
+     * del color elegido con la cantidad de pildoras como parametro
+     ******
+     * Input:
+     *   Pikinim[] pikinims: arreglo de pikinims.
+     ******
+     * Returns:
+     *   No se retorna nada ya que la función es de tipo void.
+     *****/
     public void Interactuar(Pikinim[] pikinims){
         if (GetCompletada()){
             super.Interactuar(pikinims);
@@ -36,11 +64,22 @@ public class Pildora extends Zona{
 
     }
 
+    /*****
+     * String toString
+     ******
+     * Da una descripcion de la clase
+     ******
+     * Input:
+     *   No es requerido ningún parámetro.
+     ******
+     * Returns:
+     *   No se retorna nada ya que la función es de tipo void.
+     *****/
     public String toString() {
         if (GetCompletada()){
             return super.toString();
         } else {
-            return "Pildora: cantidad=" + cantidad;
+            return "\u001B[92mPildora\u001B[0m: cantidad=" + cantidad;
         }
 
     }

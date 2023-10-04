@@ -1,11 +1,36 @@
 public class Muralla extends Zona{
     private int vida;
 
+    /*****
+     * Constructor Muralla
+     ******
+     * Esta función, inicializa las variables de la clase Muralla
+     * Llamando a su vez el constructor de la superclase Zona para inicializar
+     * todas la variables necesarias
+     ******
+     * Input:
+     * int vida: variable a asignar.
+     ******
+     * Returns:
+     * No retorna nada debido a que es el constructor.
+     *****/
     Muralla(int vida){
         super();
         this.vida = vida;
     }
 
+    /*****
+     * boolean TryRomper
+     ******
+     * Si la suma de los ataques de todos los pikinim es superior
+     * a la vida de la muralla, esta se destruye.
+     ******
+     * Input:
+     *   Pikinim[] pikinims: arreglo de pikinims.
+     ******
+     * Returns:
+     *   Se retorna true si se logra romper la muralla, en caso contrario false.
+     *****/
     public boolean TryRomper(Pikinim[] pikinims){
         System.out.println("Te encuentras con una muralla, la cual te impide el paso");
         System.out.println("Reunes a todos tus pikinim y gritas: A LA CARGA!");
@@ -25,6 +50,19 @@ public class Muralla extends Zona{
         }
     }
 
+    /*****
+     * void Interactuar
+     ******
+     * Si la zona ya esta completada, se llama a interactuar de la superclase
+     * en caso contrario, se llama a TryRomper, si esta da true
+     * se deja la zona completada.
+     ******
+     * Input:
+     *   Pikinim[] pikinims: arreglo de pikinims.
+     ******
+     * Returns:
+     *   No se retorna nada ya que la función es de tipo void.
+     *****/
     public void Interactuar(Pikinim[] pikinims){
         if (GetCompletada()){
             super.Interactuar(pikinims);
@@ -33,11 +71,22 @@ public class Muralla extends Zona{
         }
     }
 
+    /*****
+     * String toString
+     ******
+     * Da una descripcion de la clase
+     ******
+     * Input:
+     *   No es requerido ningún parámetro.
+     ******
+     * Returns:
+     *   No se retorna nada ya que la función es de tipo void.
+     *****/
     public String toString() {
         if (GetCompletada()){
             return super.toString();
         } else {
-            return "Muralla: Vida=" + vida;
+            return "\u001B[97mMuralla\u001B[0m: Vida=" + vida;
         }
 
     }

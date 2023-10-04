@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="276a6b26-cdff-466e-928d-5912141af1e8" name="Changes" comment="Agregue varias weas">
+    <list default="true" id="276a6b26-cdff-466e-928d-5912141af1e8" name="Changes" comment="Casi terminado, agregando estilo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Amarillo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Amarillo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cyan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cyan.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Enemigo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enemigo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ILevantar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ILevantar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Juego.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Magenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Magenta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Muralla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Muralla.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pieza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pieza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pikinim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pikinim.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pildora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pildora.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Zona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Zona.java" afterDir="false" />
     </list>
@@ -103,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696216688745</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Casi terminado, agregando estilo">
+      <option name="closed" value="true" />
+      <created>1696386255594</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696386255595</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -120,6 +130,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Primer commit (ahora si xde)" />
     <MESSAGE value="Agregue varias weas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Agregue varias weas" />
+    <MESSAGE value="Casi terminado, agregando estilo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Casi terminado, agregando estilo" />
   </component>
 </project>
