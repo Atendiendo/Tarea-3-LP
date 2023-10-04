@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="276a6b26-cdff-466e-928d-5912141af1e8" name="Changes" comment="Falta el readme, revisar comentarios y el comprimido">
+    <list default="true" id="276a6b26-cdff-466e-928d-5912141af1e8" name="Changes" comment="Comentarios revisados, falta readme y comprimido">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Amarillo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Amarillo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Enemigo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enemigo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Juego.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Muralla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Muralla.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pieza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pieza.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pikinim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pikinim.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pildora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pildora.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Zona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Zona.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696393344080</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Comentarios revisados, falta readme y comprimido">
+      <option name="closed" value="true" />
+      <created>1696423695383</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1696423695383</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -136,6 +141,7 @@
     <MESSAGE value="Agregue varias weas" />
     <MESSAGE value="Casi terminado, agregando estilo" />
     <MESSAGE value="Falta el readme, revisar comentarios y el comprimido" />
-    <option name="LAST_COMMIT_MESSAGE" value="Falta el readme, revisar comentarios y el comprimido" />
+    <MESSAGE value="Comentarios revisados, falta readme y comprimido" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comentarios revisados, falta readme y comprimido" />
   </component>
 </project>

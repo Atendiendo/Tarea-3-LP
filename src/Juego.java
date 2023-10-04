@@ -24,7 +24,7 @@ public class Juego {
         Zona[] mapa;
         mapa = new Zona[11];
         mapa[0] = new Pieza(50);
-        mapa[1] = new Enemigo(130,20,25, true, "Este es una especie de hongo marron, con ojos saltones, colmillos y un ceño fruncido");
+        mapa[1] = new Enemigo(130,20,25, true, "Este es una especie de hongo marron, con ojos saltones, colmillos y un ceno fruncido");
         mapa[2] = new Enemigo(50,10,15, true, "Esta criatura se asemeja a una especie de reptil, con ojos grandes y amarillos que emiten una luz siniestra, \ntiene una piel escamosa y pálida.");
         mapa[3] = new Pildora(25);
         mapa[4] = new Muralla(50);
@@ -37,11 +37,11 @@ public class Juego {
 
 
         System.out.println("\n\u001B[4m¡Bienvenido a 'Mal Aterrizaje'!\u001B[0m");
-        System.out.println("Te despiertas solo en un planeta extraño");
+        System.out.println("Te despiertas solo en un planeta extrano");
         System.out.println("Lo ultimo que recuerdas es que estabas haciendo un viaje de rutina y de pronto todo se volvio negro...");
         System.out.println("Estas dentro de tu nave, la cual esta destrozada y inmediatamente te pones el tanque de oxigeno.");
-        System.out.println("Afuera ves unas extrañas criaturas de diferentes colores");
-        System.out.println("Estas son pequeñas y lo unico que repiten es 'pikinim' en una voz aguda");
+        System.out.println("Afuera ves unas extranas criaturas de diferentes colores");
+        System.out.println("Estas son pequenas y lo unico que repiten es 'pikinim' en una voz aguda");
         System.out.println("Decides salir de tu nave y acercarte a ellas, estas parecen inofensivas");
         System.out.println("Te dices a ti mismo: Quizas me pueden ayudar a encontrar las piezas para reparar mi nave");
         System.out.println("Sin embargo debes ser rapido, antes de que se te acabe el tanque de oxigeno\n");
@@ -55,12 +55,12 @@ public class Juego {
         while((turno <= turnos_totales) && (PiezasEncontradas != 3)) {
             System.out.println("\u001B[91m||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\u001B[0m");
 
-            System.out.println("════════════════════════════════════════════════");
+            System.out.println("\u001B[97m||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\u001B[0m");
             System.out.println("\u001B[4m\u001B[1mPIKINIMS\u001B[0m                                        ");
             System.out.println("\u001B[36mCyan\u001B[0m: cantidad= " + pikinims[0].GetCantidad() + " capacidad= " + pikinims[0].GetCapacidad() + " ataque= " + pikinims[0].GetAtaque() + "       ");
             System.out.println("\u001B[35mMagenta\u001B[0m: cantidad= " + pikinims[1].GetCantidad() + " capacidad= " + pikinims[1].GetCapacidad() + " ataque= " + pikinims[1].GetAtaque() + "    ");
             System.out.println("\u001B[33mAmarillo\u001B[0m: cantidad= " + pikinims[2].GetCantidad() + " capacidad= " + pikinims[2].GetCapacidad() + " ataque= " + pikinims[2].GetAtaque() + "   ");
-            System.out.println("════════════════════════════════════════════════");
+            System.out.println("\u001B[97m||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\u001B[0m");
 
             System.out.println("Tienes 3 opciones:");
 
@@ -156,14 +156,14 @@ public class Juego {
             System.out.println("Con la ayuda de los pikinim, llevas todas las piezas devuelta a la nave");
             System.out.println("Despues de dias de estar trabajar en conjunto con las criaturas");
             System.out.println("finalmente logran reparar la nave lo suficiente como para volver a casa");
-            System.out.println("Te despides de cada uno de los pikinim que te acompañaron en tu aventura");
+            System.out.println("Te despides de cada uno de los pikinim que te acompanaron en tu aventura");
             System.out.println("Con un nudo en la garganta, te subes a tu nave y, mientras te alejas, no puedes evitar que se te escape un lagrima.");
             System.out.println("-------------------FIN-------------------");
         } else {
             System.out.println("Empiezas a sentir como cada vez mas cuesta respirar");
             System.out.println("Ademas, experimentas mareos y nauseas");
             System.out.println("Miras tus dedos, los cuales estan completamente morados");
-            System.out.println("Empiezas a tener mucho sueño, hasta que todo se vuelve negro...");
+            System.out.println("Empiezas a tener mucho sueno, hasta que todo se vuelve negro...");
             System.out.println("-------------------FIN-------------------");
         }
     }

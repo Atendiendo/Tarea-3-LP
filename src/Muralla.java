@@ -40,7 +40,7 @@ public class Muralla extends Zona{
             ataque_total += (pikinims[i].GetCantidad())*(pikinims[i].GetAtaque());
         }
         vida -= ataque_total;
-        System.out.println("Tus pikinim logran hacer " + ataque_total + " de daño\n");
+        System.out.println("Tus pikinim logran hacer " + ataque_total + " de dano\n");
         if (vida <=0){
             System.out.println("Con un estruendo ensordecedor, los valientes pikinim logran derribar la muralla, permitiéndote así proseguir con tu aventura.\n");
             return true;

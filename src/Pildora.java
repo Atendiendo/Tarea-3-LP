@@ -39,7 +39,7 @@ public class Pildora extends Zona{
         if (GetCompletada()){
             super.Interactuar(pikinims);
         }else {
-            System.out.println("De repente te encuentras con unas pequeñas pildoras en el suelo");
+            System.out.println("De repente te encuentras con unas pequenas pildoras en el suelo");
             System.out.println("Decides darselas a tus pikinim because why not");
             System.out.println("Ingrese el color de pikinim que desea multiplicar");
             System.out.println("1.Cyan 2.Magenta 3.Amarillo");

@@ -142,7 +142,7 @@ public class Enemigo extends Zona implements ILevantar{
             ataque_total += (pikinims[i].GetCantidad())*(pikinims[i].GetAtaque());
         }
         vida -= ataque_total;
-        System.out.println("Todos tus pikinim reunen sus fuerzas y atacan al monstruo haciendo : " + ataque_total + " de daño");
+        System.out.println("Todos tus pikinim reunen sus fuerzas y atacan al monstruo haciendo : " + ataque_total + " de dano");
 
 
         int pikinim_atacado = (int)(Math.random() * 3);
