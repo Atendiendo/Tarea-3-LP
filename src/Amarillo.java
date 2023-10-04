@@ -6,7 +6,10 @@ public class Amarillo extends Pikinim{
     }
     public void multiplicar(int cantidad){
         int cantidad_pikinim = GetCantidad();
-        cantidad_pikinim = (int) Math.ceil(cantidad * 1.5);
+        int cantidad_aumentada = (int) Math.ceil(cantidad * 1.5);
+        cantidad_pikinim += cantidad_aumentada;
+        System.out.println("Los pikinim Amarillo han aumentado su cantidad en: " + cantidad_aumentada + "\n");
         SetCantidad(cantidad_pikinim);
+
     }
 }

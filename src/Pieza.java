@@ -1,5 +1,5 @@
 public class Pieza extends Zona implements ILevantar{
-    private int peso;
+    private final int peso;
 
     Pieza(int peso){
         super();
@@ -13,11 +13,10 @@ public class Pieza extends Zona implements ILevantar{
             capacidad_total += (pikinims[i].GetCantidad())*(pikinims[i].GetCapacidad());
         }
         if (capacidad_total >= peso){
-            //Dejar mensaje
-            System.out.println("Los pikinim han logrado levantar la pieza!");
+            System.out.println("Con determinación y esfuerzo indomable, los pikinim han logrado levantar la pieza.\n");
             SetCompletada(true);
         } else {
-            System.out.println("Los pikinim no han logrado leventar la pieza u.u");
+            System.out.println("Los pikinim no han logrado leventar la pieza u.u\n");
         }
 
     }
@@ -28,5 +27,13 @@ public class Pieza extends Zona implements ILevantar{
             Levantar(pikinims);
         }
 
+    }
+
+    public String toString() {
+        if (GetCompletada()){
+            return super.toString();
+        } else {
+            return "Pieza: peso=" + peso;
+        }
     }
 }

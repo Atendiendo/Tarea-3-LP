@@ -14,6 +14,10 @@ public class Zona {
     }
 
     public void Interactuar(Pikinim[] pikinims){
-        System.out.println("No queda nada que hacer aquí");
+        System.out.println("No queda nada que hacer aquí\n");
+    }
+
+    public String toString() {
+        return "No queda nada por hacer en esta zona";
     }
 }

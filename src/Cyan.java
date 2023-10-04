@@ -6,7 +6,9 @@ public class Cyan extends Pikinim{
     }
     public void multiplicar(int cantidad){
         int cantidad_pikinim = GetCantidad();
-        cantidad_pikinim = cantidad * 3;
+        int cantidad_aumentada = cantidad * 3;
+        cantidad_pikinim += cantidad_aumentada;
+        System.out.println("Los pikinim Cyan han aumentado su cantidad en: " + cantidad_aumentada + "\n");
         SetCantidad(cantidad_pikinim);
     }
 }
