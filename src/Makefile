@@ -7,4 +7,4 @@ run:
 	java Juego
 
 clean:
-	rm -f programa *.o
+	rm -f programa *.class
