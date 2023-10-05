@@ -87,7 +87,7 @@ public class Muralla extends Zona{
         if (GetCompletada()){
             return super.toString();
         } else {
-            return "\u001B[97mMuralla\u001B[0m: Vida=" + vida;
+            return "Muralla: Vida=" + vida;
         }
 
     }

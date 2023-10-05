@@ -79,7 +79,7 @@ public class Pildora extends Zona{
         if (GetCompletada()){
             return super.toString();
         } else {
-            return "\u001B[92mPildora\u001B[0m: cantidad=" + cantidad;
+            return "Pildora: cantidad=" + cantidad;
         }
 
     }

@@ -82,7 +82,7 @@ public class Pieza extends Zona implements ILevantar{
         if (GetCompletada()){
             return super.toString();
         } else {
-            return "\u001B[93mPieza\u001B[0m: peso=" + peso;
+            return "Pieza: peso=" + peso;
         }
     }
 }

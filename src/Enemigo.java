@@ -187,7 +187,7 @@ public class Enemigo extends Zona implements ILevantar{
         if (GetCompletada()){
             return super.toString();
         } else {
-            return "\u001B[91mEnemigo\u001B[0m: vida=" + vida + " peso=" + peso + " ataque=" + ataque;
+            return "Enemigo: vida=" + vida + " peso=" + peso + " ataque=" + ataque;
         }
 
     }

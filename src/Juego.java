@@ -36,7 +36,7 @@ public class Juego {
         mapa[10] = new Muralla(150);
 
 
-        System.out.println("\n\u001B[4m¡Bienvenido a 'Mal Aterrizaje'!\u001B[0m");
+        System.out.println("\n¡Bienvenido a 'Mal Aterrizaje'!");
         System.out.println("Te despiertas solo en un planeta extrano");
         System.out.println("Lo ultimo que recuerdas es que estabas haciendo un viaje de rutina y de pronto todo se volvio negro...");
         System.out.println("Estas dentro de tu nave, la cual esta destrozada y inmediatamente te pones el tanque de oxigeno.");
@@ -52,15 +52,17 @@ public class Juego {
         String dir_muralla = "ninguna";
         Scanner input = new Scanner(System.in);
 
+        boolean flag1 = true, flag2 = true, flag3 = true;
+
         while((turno <= turnos_totales) && (PiezasEncontradas != 3)) {
-            System.out.println("\u001B[91m||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\u001B[0m");
+            System.out.println("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
             System.out.println("Turno " + turno + " Piezas encontradas: " + PiezasEncontradas);
-            System.out.println("\u001B[97m||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\u001B[0m");
-            System.out.println("\u001B[4m\u001B[1mPIKINIMS\u001B[0m                                        ");
-            System.out.println("\u001B[36mCyan\u001B[0m: cantidad= " + pikinims[0].GetCantidad() + " capacidad= " + pikinims[0].GetCapacidad() + " ataque= " + pikinims[0].GetAtaque() + "       ");
-            System.out.println("\u001B[35mMagenta\u001B[0m: cantidad= " + pikinims[1].GetCantidad() + " capacidad= " + pikinims[1].GetCapacidad() + " ataque= " + pikinims[1].GetAtaque() + "    ");
-            System.out.println("\u001B[33mAmarillo\u001B[0m: cantidad= " + pikinims[2].GetCantidad() + " capacidad= " + pikinims[2].GetCapacidad() + " ataque= " + pikinims[2].GetAtaque() + "   ");
-            System.out.println("\u001B[97m||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\u001B[0m");
+            System.out.println("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
+            System.out.println("PIKINIMS");
+            System.out.println("Cyan: cantidad= " + pikinims[0].GetCantidad() + " capacidad= " + pikinims[0].GetCapacidad() + " ataque= " + pikinims[0].GetAtaque() + "       ");
+            System.out.println("Magenta: cantidad= " + pikinims[1].GetCantidad() + " capacidad= " + pikinims[1].GetCapacidad() + " ataque= " + pikinims[1].GetAtaque() + "    ");
+            System.out.println("Amarillo: cantidad= " + pikinims[2].GetCantidad() + " capacidad= " + pikinims[2].GetCapacidad() + " ataque= " + pikinims[2].GetAtaque() + "   ");
+            System.out.println("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
 
             System.out.println("Tienes 3 opciones:");
 
@@ -83,16 +85,16 @@ public class Juego {
                 System.out.println("    3. Quedarse aqui (" + zona_mid + ")");
                 opcion = input.nextInt();
                 while (opcion == 1){
-                    System.out.println("\u001B[91m||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\u001B[0m\n");
+                    System.out.println("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
                     System.out.println("No puedes atravesar murallas\n");
-                    System.out.println("\u001B[91m||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\u001B[0m");
+                    System.out.println("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
                     System.out.println("Turno " + turno + " Piezas encontradas: " + PiezasEncontradas);
-                    System.out.println("\u001B[97m||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\u001B[0m");
-                    System.out.println("\u001B[4m\u001B[1mPIKINIMS\u001B[0m                                        ");
-                    System.out.println("\u001B[36mCyan\u001B[0m: cantidad= " + pikinims[0].GetCantidad() + " capacidad= " + pikinims[0].GetCapacidad() + " ataque= " + pikinims[0].GetAtaque() + "       ");
-                    System.out.println("\u001B[35mMagenta\u001B[0m: cantidad= " + pikinims[1].GetCantidad() + " capacidad= " + pikinims[1].GetCapacidad() + " ataque= " + pikinims[1].GetAtaque() + "    ");
-                    System.out.println("\u001B[33mAmarillo\u001B[0m: cantidad= " + pikinims[2].GetCantidad() + " capacidad= " + pikinims[2].GetCapacidad() + " ataque= " + pikinims[2].GetAtaque() + "   ");
-                    System.out.println("\u001B[97m||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\u001B[0m");
+                    System.out.println("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
+                    System.out.println("PIKINIMS");
+                    System.out.println("Cyan: cantidad= " + pikinims[0].GetCantidad() + " capacidad= " + pikinims[0].GetCapacidad() + " ataque= " + pikinims[0].GetAtaque() + "       ");
+                    System.out.println("Magenta: cantidad= " + pikinims[1].GetCantidad() + " capacidad= " + pikinims[1].GetCapacidad() + " ataque= " + pikinims[1].GetAtaque() + "    ");
+                    System.out.println("Amarillo: cantidad= " + pikinims[2].GetCantidad() + " capacidad= " + pikinims[2].GetCapacidad() + " ataque= " + pikinims[2].GetAtaque() + "   ");
+                    System.out.println("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
                     System.out.println("Tienes 3 opciones:");
                     System.out.println("    1. La muralla te bloquea el paso!");
                     System.out.println("    2. Ir a la izquierda (" + zona_izq + ")");
@@ -105,16 +107,16 @@ public class Juego {
                 System.out.println("    3. Quedarse aqui (" + zona_mid + ")");
                 opcion = input.nextInt();
                 while (opcion == 2){
-                    System.out.println("\u001B[91m||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\u001B[0m\n");
+                    System.out.println("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
                     System.out.println("No puedes atravesar murallas\n");
-                    System.out.println("\u001B[91m||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\u001B[0m");
+                    System.out.println("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
                     System.out.println("Turno " + turno + " Piezas encontradas: " + PiezasEncontradas);
-                    System.out.println("\u001B[97m||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\u001B[0m");
-                    System.out.println("\u001B[4m\u001B[1mPIKINIMS\u001B[0m                                        ");
-                    System.out.println("\u001B[36mCyan\u001B[0m: cantidad= " + pikinims[0].GetCantidad() + " capacidad= " + pikinims[0].GetCapacidad() + " ataque= " + pikinims[0].GetAtaque() + "       ");
-                    System.out.println("\u001B[35mMagenta\u001B[0m: cantidad= " + pikinims[1].GetCantidad() + " capacidad= " + pikinims[1].GetCapacidad() + " ataque= " + pikinims[1].GetAtaque() + "    ");
-                    System.out.println("\u001B[33mAmarillo\u001B[0m: cantidad= " + pikinims[2].GetCantidad() + " capacidad= " + pikinims[2].GetCapacidad() + " ataque= " + pikinims[2].GetAtaque() + "   ");
-                    System.out.println("\u001B[97m||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\u001B[0m");
+                    System.out.println("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
+                    System.out.println("PIKINIMS");
+                    System.out.println("Cyan: cantidad= " + pikinims[0].GetCantidad() + " capacidad= " + pikinims[0].GetCapacidad() + " ataque= " + pikinims[0].GetAtaque() + "       ");
+                    System.out.println("Magenta: cantidad= " + pikinims[1].GetCantidad() + " capacidad= " + pikinims[1].GetCapacidad() + " ataque= " + pikinims[1].GetAtaque() + "    ");
+                    System.out.println("Amarillo: cantidad= " + pikinims[2].GetCantidad() + " capacidad= " + pikinims[2].GetCapacidad() + " ataque= " + pikinims[2].GetAtaque() + "   ");
+                    System.out.println("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
                     System.out.println("Tienes 3 opciones:");
                     System.out.println("    1. Ir a la derecha (" + zona_der + ")");
                     System.out.println("    2. La muralla te bloquea el paso!");
@@ -122,15 +124,15 @@ public class Juego {
                     opcion = input.nextInt();
                 }
             } else {
-                System.out.println("    \u001B[3m1.\u001B[0m Ir a la derecha (" + zona_der + ")");
-                System.out.println("    \u001B[3m2.\u001B[0m Ir a la izquierda (" + zona_izq + ")");
-                System.out.println("    \u001B[3m3.\u001B[0m Quedarse aqui (" + zona_mid + ")");
+                System.out.println("    1. Ir a la derecha (" + zona_der + ")");
+                System.out.println("    2. Ir a la izquierda (" + zona_izq + ")");
+                System.out.println("    3. Quedarse aqui (" + zona_mid + ")");
                 opcion = input.nextInt();
             }
 
 
 
-            System.out.println("\u001B[91m||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\u001B[0m");
+            System.out.println("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
             switch (opcion){
                 case 1:
                     PosJugador += 1;
@@ -156,7 +158,14 @@ public class Juego {
             mapa[PosJugador].Interactuar(pikinims);
 
 
-            if ((mapa[PosJugador] instanceof Pieza) && (mapa[PosJugador].GetCompletada())){
+            if ((mapa[0].GetCompletada()) && (flag1)){
+                flag1 = false;
+                PiezasEncontradas += 1;
+            } else if ((mapa[5].GetCompletada()) && (flag2)) {
+                flag2 = false;
+                PiezasEncontradas += 1;
+            } else if ((mapa[7].GetCompletada()) && (flag3)){
+                flag3 = false;
                 PiezasEncontradas += 1;
             }
 
