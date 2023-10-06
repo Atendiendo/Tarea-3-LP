@@ -52,9 +52,9 @@ public class Juego {
         String dir_muralla = "ninguna";
         Scanner input = new Scanner(System.in);
 
-        boolean flag1 = true, flag2 = true, flag3 = true;
+        boolean flag1 = true, flag2 = true, flag3 = true, pikinim_muertos = false;
 
-        while((turno <= turnos_totales) && (PiezasEncontradas != 3)) {
+        while((turno <= turnos_totales) && (PiezasEncontradas != 3) && (!pikinim_muertos)) {
             System.out.println("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
             System.out.println("Turno " + turno + " Piezas encontradas: " + PiezasEncontradas);
             System.out.println("||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
@@ -157,6 +157,9 @@ public class Juego {
 
             mapa[PosJugador].Interactuar(pikinims);
 
+            if ((pikinims[0].GetCantidad()==0) && (pikinims[1].GetCantidad()==0) && (pikinims[2].GetCantidad()==0)){
+                pikinim_muertos = true;
+            }
 
             if ((mapa[0].GetCompletada()) && (flag1)){
                 flag1 = false;
@@ -179,6 +182,14 @@ public class Juego {
             System.out.println("finalmente logran reparar la nave lo suficiente como para volver a casa");
             System.out.println("Te despides de cada uno de los pikinim que te acompanaron en tu aventura");
             System.out.println("Con un nudo en la garganta, te subes a tu nave y, mientras te alejas, no puedes evitar que se te escape un lagrima.");
+            System.out.println("-------------------FIN-------------------");
+        } else if(pikinim_muertos){
+            System.out.println("Ves como cada uno de tus pikinim estan muriendo en batalla");
+            System.out.println("Decides unirte a la batalla y atacas al monstruo");
+            System.out.println("Pero este es demasiado fuerte para ti y no puedes con el");
+            System.out.println("El enemigo arrasa contigo y te quedas moribundo en el suelo");
+            System.out.println("Lo ultimo que ves es a un pikinim arrastrandose hacia ti");
+            System.out.println("Intentas extender tu brazo para alcanzarlo, pero no lo puedes mover, ya es demasiado tarde...");
             System.out.println("-------------------FIN-------------------");
         } else {
             System.out.println("Empiezas a sentir como cada vez mas cuesta respirar");
