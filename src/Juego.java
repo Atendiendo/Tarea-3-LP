@@ -149,7 +149,10 @@ public class Juego {
                     }
                     break;
                 case 3:
-                    dir_muralla = "ninguna";
+                    if ((mapa[PosJugador] instanceof Muralla) && (mapa[PosJugador].GetCompletada())){
+                        dir_muralla = "ninguna";
+                    }
+
                     break;
             }
 

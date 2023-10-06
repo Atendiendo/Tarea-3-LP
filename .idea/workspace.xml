@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="276a6b26-cdff-466e-928d-5912141af1e8" name="Changes" comment="Removidos escape ANSI y arreglo piezas encontradas.">
+    <list default="true" id="276a6b26-cdff-466e-928d-5912141af1e8" name="Changes" comment="Añadido pikims muertos y lore">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Juego.java" afterDir="false" />
     </list>
@@ -156,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696467244459</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Añadido pikims muertos y lore">
+      <option name="closed" value="true" />
+      <created>1696552824569</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1696552824569</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,6 +188,7 @@
     <MESSAGE value="Probar make y actualizar readme" />
     <MESSAGE value="Tarea lista para entregar." />
     <MESSAGE value="Removidos escape ANSI y arreglo piezas encontradas." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removidos escape ANSI y arreglo piezas encontradas." />
+    <MESSAGE value="Añadido pikims muertos y lore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Añadido pikims muertos y lore" />
   </component>
 </project>
